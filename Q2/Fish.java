@@ -16,7 +16,7 @@ Random random = new Random();
              int j = random.nextInt(arr.size());
            while (i == j) //if fish is same generate again
             j = random.nextInt(arr.size());
-           if (arr.get(i) == 'm' && arr.get(i) == 'm') {
+           if (arr.get(i) == 'm' && arr.get(j) == 'm') {
                 arr.remove(i);
                 arr.remove(j);
                 System.out.println("Two male fishes met and killed each other: " + arr);
